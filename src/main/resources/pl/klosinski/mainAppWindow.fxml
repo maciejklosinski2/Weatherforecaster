@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="mainAnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.klosinski.controller.MainAppWindowController">
+        <GridPane id="leftGridPane" GridPane.columnIndex="0">
+            <Label fx:id="userLocationLabel" alignment="CENTER" contentDisplay="CENTER"  text="Gdzie mieszkasz?" textAlignment="CENTER"></Label>
+            <TextField fx:id="userLocationTextField" promptText="Wprowadź nazwę miasta"   GridPane.rowIndex="1"/>
+            <Button defaultButton="true" mnemonicParsing="false"  text="Sprawdź prognozę" GridPane.rowIndex="2" />
+        </GridPane>
+        <GridPane id="rightGridPane" GridPane.columnIndex="1">
+            <Label fx:id="destinationLocationLabel" alignment="CENTER" contentDisplay="CENTER" text="Gdzie chciałbyś pojechać?" textAlignment="CENTER"></Label>
+            <TextField fx:id="destinationLocationTextField" promptText="Wprowadź nazwę miasta" GridPane.rowIndex="1"/>
+            <Button defaultButton="true" mnemonicParsing="false" text="Sprawdź prognozę" GridPane.rowIndex="2" />
+        </GridPane>
+</AnchorPane>
