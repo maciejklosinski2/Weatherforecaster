@@ -2,8 +2,10 @@ package pl.klosinski.controller;
 
 import pl.klosinski.view.ViewFactory;
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
-import javafx.scene.layout.*;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 
 public class MainAppWindowController extends BaseController {
     public MainAppWindowController(ViewFactory viewFactory, String fxmlName) {

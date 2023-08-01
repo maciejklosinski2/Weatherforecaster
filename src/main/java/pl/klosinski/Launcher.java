@@ -6,7 +6,6 @@ import javafx.scene.Parent;
 import javafx.stage.Stage;
 import pl.klosinski.view.ViewFactory;
 import java.io.IOException;
-
 public class Launcher extends Application {
 
     public static void main(String[] args) {

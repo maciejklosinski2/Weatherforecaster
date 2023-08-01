@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="mainAnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.klosinski.controller.MainAppWindowController">
-        <GridPane id="leftGridPane" GridPane.columnIndex="0">
-            <Label fx:id="userLocationLabel" alignment="CENTER" contentDisplay="CENTER"  text="Gdzie mieszkasz?" textAlignment="CENTER"></Label>
-            <TextField fx:id="userLocationTextField" promptText="Wprowadź nazwę miasta"   GridPane.rowIndex="1"/>
-            <Button defaultButton="true" mnemonicParsing="false"  text="Sprawdź prognozę" GridPane.rowIndex="2" />
+<AnchorPane id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.klosinski.controller.MainAppWindowController">
+    <children>
+        <GridPane id="leftGridPane" alignment="TOP_CENTER" minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="296.0" AnchorPane.leftAnchor="200" GridPane.columnIndex="0">
+                <Label fx:id="userLocationLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="169.0" style="-fx-padding: 10;" text="Gdzie mieszkasz?" textAlignment="CENTER" />
+                <TextField fx:id="userLocationTextField" prefHeight="36.0" prefWidth="183.0" promptText="Wprowadź nazwę miasta" style="-fx-padding: 10;" GridPane.rowIndex="1" />
+                <Button defaultButton="true" mnemonicParsing="false" prefHeight="26.0" prefWidth="182.0" style="-fx-padding: 10;" text="Sprawdź prognozę" GridPane.rowIndex="2" />
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
         </GridPane>
-        <GridPane id="rightGridPane" GridPane.columnIndex="1">
-            <Label fx:id="destinationLocationLabel" alignment="CENTER" contentDisplay="CENTER" text="Gdzie chciałbyś pojechać?" textAlignment="CENTER"></Label>
-            <TextField fx:id="destinationLocationTextField" promptText="Wprowadź nazwę miasta" GridPane.rowIndex="1"/>
-            <Button defaultButton="true" mnemonicParsing="false" text="Sprawdź prognozę" GridPane.rowIndex="2" />
+        <GridPane id="rightGridPane" alignment="TOP_CENTER" minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="296.0" AnchorPane.rightAnchor="200" GridPane.columnIndex="1">
+            <Label fx:id="destinationLocationLabel" alignment="CENTER" contentDisplay="CENTER" style="-fx-padding: 10;" text="Gdzie chciałbyś pojechać?" textAlignment="CENTER" />
+            <TextField fx:id="destinationLocationTextField" promptText="Wprowadź nazwę miasta" style="-fx-padding: 10;" GridPane.rowIndex="1" />
+            <Button defaultButton="true" mnemonicParsing="false" prefHeight="26.0" prefWidth="191.0" style="-fx-padding: 10;" text="Sprawdź prognozę" GridPane.rowIndex="2" />
+        <columnConstraints>
+        <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        </rowConstraints>
         </GridPane>
+    </children>
 </AnchorPane>
